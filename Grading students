@@ -1,0 +1,16 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+n=int(input().strip())
+for a0 in range(n):
+    grd = int(input().strip())
+    if grd >= 38:
+        mod5=grd % 5
+        if mod5 >= 3:
+            grd = grd + (5 - mod5)
+    print(grd)        
